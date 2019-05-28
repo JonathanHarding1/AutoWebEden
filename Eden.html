@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="Eden.css" rel="stylesheet" type="text/css">
+<script>
+    $(document).ready(function(){
+        var date_input=$('input[name="date"]'); //our date input has the name "date"
+        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+        date_input.datepicker({
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+        })
+    })
+</script>
+</head>
+<nav>
+<div class="desktop-nav">
+<div class="left-nav">
+<ul>
+<li><a href="./">Home Page</a></li>
+<li><a href="./">New Vehicles</a></li>
+<li><a href="./">Used Vehicles</a></li>
+</ul>
+</div>
+<div class="image-logo">
+<img src="file:../Eden%20Motor%20Group/eden-logo.png">
+</div>
+<div class="right-nav">
+<ul>
+<li><a href="./">Service</a></li>
+<li><a href="./">About Us</a></li>
+<li><a href="./">Contact Us</a></li>
+</ul>
+</div>
+</div>
+<div class="tablet-nav">
+<div class="mobile-nav-strip">
+<div class="mobile-icon">
+<img src="file:../Eden%20Motor%20Group/menu-icon.png">
+<h3>MENU</h3>
+</div>
+</div>
+<div class="image-logo">
+<img src="file:../Eden%20Motor%20Group/eden-logo.png">
+</div>
+</nav>
+<body>
+<div class="header-image">
+<img src="file:../Eden%20Motor%20Group/SUV-Range.jpg">
+</div>
+<div class="event-text">
+<h1>Eden Sales Event</h1>
+<p>The Eden Vauxhall collection includes top models like the life-ready Crossland X, the dynamic Mokka X and the powerful Grandland X – all with deals tailored for you.</p>
+<p>So find your perfect SUV in the special Eden sales event from 12:00am Saturday 25 May – 11:59pm Sunday 26 May. See which Vauxhall fits you by clicking the links above. You can also go and book a test drive with your local Eden Motor Group Dealership down below.</p>
+</div>
+<div class="event-timer">
+<iframe width="501" height="258" src="https://w2.countingdownto.com/2488850" frameborder="0"></iframe>
+</div>
+<div class="background-cars">
+<p>&nbsp;</p>
+</div>
+<div class="SUV-Range-Title">
+<h2>Our SUV range</h2>
+</div>
+<div class="Crossland-Image">
+<a href="https://www.edenmotorgroup.com/new/vauxhall/crossland-x"><img src="file:../Eden%20Motor%20Group/crossland-x.png">
+<h3>Crossland X</h3>
+</a>
+</div>
+<div class="Grandland-Image">
+<a href="https://www.edenmotorgroup.com/new/vauxhall/grandland-x"><img src="file:../Eden%20Motor%20Group/grandland-x.png">
+<h3>Grandland X</h3>
+</a>
+</div>
+<div class="Mokka-Image">
+<a href="https://www.edenmotorgroup.com/new/vauxhall/mokka-x"><img src="file:../Eden%20Motor%20Group/mokka-x.png">
+<h3>Mokka X</h3>
+</a>
+</div>
+<div class="test-drive-form">
+<h2>Book a test drive with Eden Motor Group</h2>
+</div>
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="phone">Telephone</label>
+    <input type="text" id="phone" name="phone" placeholder="Telephone">
+
+    <label for="email">Email Address</label>
+    <input type="text" id="email" name="email" placeholder="Email Address">
+
+    <label for="car">Car you want to test drive</label>
+    <select id="car" name="car">
+      <option value="Choose">Choose the car you want to test drive</option>
+      <option value="Crossland X">Crossland X</option>
+      <option value="Grandland X">Grandland X</option>
+      <option value="Mokka X">Mokka X</option>
+    </select>
+
+<!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+
+<!--Font Awesome (added because you use icons in your prepend/append)-->
+<link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+<!-- Inline CSS based on choices in "Settings" tab -->
+<style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+<!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+<div class="bootstrap-iso">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-md-6 col-sm-6 col-xs-12">
+     <div class="form-group ">
+      <label class="control-label " for="date">
+       Date
+      </label>
+      <div class="input-group">
+       <div class="input-group-addon">
+        <i class="fa fa-calendar-o">
+        </i>
+       </div>
+       <input class="form-control" id="date" name="date" placeholder="DD/MM/YYYY" type="text"/>
+      </div>
+     </div>
+   </div>
+  </div>
+ </div>
+</div>
+
+<!-- Extra JavaScript/CSS added manually in "Settings" tab -->
+<!-- Include jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<script src="Eden-Javascript.js"></script>
+
+
+<label for="car">Location</label>
+    <select id="location" name="location">
+      <option value="Choose">Select Location</option>
+      <option value="Banbury">Banbury</option>
+      <option value="Bracknell">Bracknell</option>
+      <option value="Branksome">Branksome</option>
+      <option value="Camberley">Camberley</option>
+      <option value="Christchurch">Christchurch</option>
+      <option value="Exeter">Exeter</option>
+      <option value="Fareham">Fareham</option>
+      <option value="Honiton">Honiton</option>
+      <option value="Newbury">Newbury</option>
+      <option value="Oxford">Oxford</option>
+      <option value="Reading">Reading</option>
+      <option value="Stratford-Upon-Avon">Stratford-Upon-Avon</option>
+      <option value="Swindon">Swindon</option>
+      <option value="Torbay">Torbay</option>
+</select>
+
+<div class="form-group">
+      <div class="btn-form">
+<button class="btn btn-primary " name="submit" type="submit">
+        Submit
+       </button>
+      </div>
+     </div>
+
+  </form>
+</div>
+
+<div class="footer">
+<div class="footer-left">
+<img src="file:../Eden%20Motor%20Group/main-footer-logo.png">
+<p>Eden Motor Retail &amp; Eden Automotive Ltd<br>Reg Office: 38-40 Portman Road, Reading, United Kingdom, RG30 1JG<br>Reg. Company No: 3198046 / 6256143 | VAT Reg. No. GB 230 6678 11</p>
+</div>
+<div class="footer-right">
+<p><img src="file:../Eden%20Motor%20Group/f-logo.png"><br>Copyright © 2019 Eden Motor Group. All Rights Reserved.</p>
+</div>
+</div>
+</body>
+</html>
